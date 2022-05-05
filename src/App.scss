@@ -1,0 +1,102 @@
+// demo简单处理下，真实项目引入normalize进行样式重置
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .qq-search-wrap {
+    width: 350px;
+    height: 500px;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    padding: 10px;
+
+    .search-title {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .search-hd {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      line-height: 32px;
+      height: 32px;
+
+      .fm-label {
+        margin-right: 10px;
+      }
+
+      .fm-child {
+        flex: 1;
+        .fm-input {
+          width: 100%;
+          border-top: none;
+          border-right: none;
+          border-left: none;
+          outline: none;
+          border-bottom: 1px solid #aaa;
+        }
+        .fm-tips {
+          margin-top: -10px;
+          color: #f00;
+        }
+      }
+    }
+
+    .search-bd {
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .error {
+        color: #bbb;
+      }
+      .qq-info {
+        display: flex;
+        border-radius: 10px;
+        width: 150px;
+        height: 50px;
+        align-items: center;
+        padding: 0 8px;
+        border: 1px solid #bbb;
+
+        .avatar {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          margin-right: 8px;
+        }
+
+        .info {
+          flex: 1;
+          width: 1%;
+
+          .name {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 14px;
+          }
+
+          .qq {
+            font-size: 12px;
+            color: #a0a0a0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
